@@ -1,5 +1,5 @@
 # To-do-list with redux-react
-![to-do-list] (src/assets/to-do-list-react-redux.png)
+![to-do-list](src/assets/to-do-list-react-redux.png)
 
 ##### Package set up
 create-react-app “name of project”
