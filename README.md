@@ -14,7 +14,7 @@ I wanted to review how Redux works with the React Library, this read-me therefor
    - Set-up Reducers
    - Set-up Dispatch
    - Set-up Subscribe & Unsubscribe
-* How does Redux-React render components? 
+* How does Redux-React render components?
 * To-do-list Project Roadmap
 
 #### What is Redux
@@ -155,12 +155,31 @@ Writing the render functions wrapped in the Provider tag
 
 
 ### To-Do-List Project Roadmap
+
 ##### Package set up
 create-react-app “name of project”
 npm install redux react-redux  --save
 Check in package j-son
 yarn start serve
 control alt i open console
+
+##### React-Redux Forms
+
+React-Redux Forms are a powerful combination of libraries to keep state in forms dynamic and controlled (virtually mimicking the functionality of HTML forms that holds state at all time). This project does not use HOCs from Redux-React forms, but I have included a note on package set up in case I want to refactor this project to include this set-up.
+
+Forms handle a high load of ui-changes. Some of these changes are immediate changes (synchronous) and some of them are based on event handlers being triggered (asynchronous). These synchronous and async changes are maintained and updated more deeply and dynamically in React-Redux forms.
+
+Ideally data should be stored server side in redux to increase stability of the app’s store, but it can also be run client side as a predictable state container for javascript.
+
+It can be stored project by project with a store wrapper as it is very light (2KB) including all dependencies, it makes the app and form handling fast and easy to install in legacy systems.
+
+For projects - [npm install redux react-redux] in your node package manager if you do not have it installed
+[npx create-react-app] to install the create the react app
+
+To install both dependencies into one project [npx create-react-app “name of project”][npm install redux react-redux --save] [redux-thunk -- save] or [yarn add redux react-redux redux-thunk]
+
+install react and redux chrome extentions and command/alt/i (mac) to see console for debugging
+connect redux chrome extension in store
 
 #### Files set up
 *  React-Component to render in main App (lister) several components possible
